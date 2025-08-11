@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #6B8F71 0%, #8FB996 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@ body {
 
 /* ===== TARJETA DE PERFIL ===== */
 .profile-card {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(244, 241, 222, 0.95);
     backdrop-filter: blur(10px);
     border-radius: 24px;
     padding: 32px;
@@ -49,7 +49,6 @@ body {
     margin-bottom: 32px;
 }
 
-/* FOTO DE PERFIL - MODIFICAR ESTILOS AQUÍ SI NECESITAS */
 .profile-image-container {
     margin-bottom: 24px;
 }
@@ -68,11 +67,10 @@ body {
     transform: scale(1.05);
 }
 
-/* INFORMACIÓN PERSONAL - MODIFICAR ESTILOS AQUÍ SI NECESITAS */
 .profile-name {
     font-size: 28px;
     font-weight: 700;
-    color: #1976d2;
+    color: #6B8F71;
     margin-bottom: 8px;
     letter-spacing: -0.5px;
 }
@@ -80,7 +78,7 @@ body {
 .profile-lastname {
     font-size: 24px;
     font-weight: 500;
-    color: #424242;
+    color: #555;
     margin-bottom: 16px;
 }
 
@@ -103,15 +101,15 @@ body {
     gap: 12px;
     font-size: 20px;
     font-weight: 600;
-    color: #1976d2;
+    color: #6B8F71;
     margin-bottom: 20px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #e3f2fd;
+    border-bottom: 2px solid #E07A5F;
 }
 
 .section-title .material-icons {
     font-size: 24px;
-    color: #1976d2;
+    color: #6B8F71;
 }
 
 /* ===== SECCIÓN DE HABILIDADES ===== */
@@ -119,7 +117,6 @@ body {
     margin-bottom: 32px;
 }
 
-/* HABILIDADES - MODIFICAR ESTILOS AQUÍ SI NECESITAS */
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -127,24 +124,24 @@ body {
 }
 
 .skill-item {
-    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    background: linear-gradient(135deg, #EAF4E1 0%, #CFE0C3 100%);
     padding: 16px;
     border-radius: 12px;
     text-align: center;
     transition: all 0.3s ease;
-    border: 1px solid #e3f2fd;
+    border: 1px solid #CFE0C3;
 }
 
 .skill-item:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(25, 118, 210, 0.2);
-    background: linear-gradient(135deg, #bbdefb 0%, #90caf9 100%);
+    box-shadow: 0 8px 16px rgba(107, 143, 113, 0.2);
+    background: linear-gradient(135deg, #CFE0C3 0%, #B6C9A6 100%);
 }
 
 .skill-name {
     font-size: 16px;
     font-weight: 500;
-    color: #1976d2;
+    color: #6B8F71;
 }
 
 /* ===== SECCIONES DE FAVORITOS ===== */
@@ -152,7 +149,6 @@ body {
     margin-bottom: 32px;
 }
 
-/* PELÍCULAS Y DISCOS FAVORITOS - MODIFICAR ESTILOS AQUÍ SI NECESITAS */
 .favorites-list {
     display: flex;
     flex-direction: column;
@@ -167,11 +163,11 @@ body {
     color: #424242;
     font-weight: 400;
     transition: all 0.3s ease;
-    border-left: 4px solid #1976d2;
+    border-left: 4px solid #E07A5F;
 }
 
 .favorite-item:hover {
-    background: #e3f2fd;
+    background: #EAF4E1;
     transform: translateX(4px);
 }
 
@@ -182,144 +178,3 @@ body {
     font-size: 14px;
     font-weight: 300;
 }
-
-/* ===== EFECTOS DE ANIMACIÓN ===== */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.8s ease forwards;
-}
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* ===== RESPONSIVE DESIGN ===== */
-/* Para tablets */
-@media (max-width: 768px) {
-    .profile-card {
-        padding: 24px;
-        margin: 10px;
-    }
-    
-    .profile-name {
-        font-size: 24px;
-    }
-    
-    .profile-lastname {
-        font-size: 20px;
-    }
-    
-    .skills-container {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 12px;
-    }
-    
-    .skill-item {
-        padding: 12px;
-    }
-}
-
-/* Para móviles */
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-    
-    .profile-card {
-        padding: 20px;
-        border-radius: 16px;
-    }
-    
-    .profile-image {
-        width: 100px;
-        height: 100px;
-    }
-    
-    .profile-name {
-        font-size: 22px;
-    }
-    
-    .profile-lastname {
-        font-size: 18px;
-    }
-    
-    .section-title {
-        font-size: 18px;
-    }
-    
-    .skills-container {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-    
-    .skill-item {
-        padding: 10px;
-    }
-    
-    .favorite-item {
-        font-size: 14px;
-        padding: 10px 12px;
-    }
-}
-
-/* Para pantallas muy pequeñas */
-@media (max-width: 320px) {
-    .profile-card {
-        padding: 16px;
-    }
-    
-    .profile-image {
-        width: 80px;
-        height: 80px;
-    }
-    
-    .profile-name {
-        font-size: 20px;
-    }
-    
-    .profile-lastname {
-        font-size: 16px;
-    }
-}
-
-/* ===== MEJORAS DE ACCESIBILIDAD ===== */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-}
-
-/* ===== ESTILOS PARA MODO OSCURO (OPCIONAL) ===== */
-@media (prefers-color-scheme: dark) {
-    .profile-card {
-        background: rgba(30, 30, 30, 0.95);
-        color: #fff;
-    }
-    
-    .profile-name {
-        color: #64b5f6;
-    }
-    
-    .profile-lastname {
-        color: #e0e0e0;
-    }
-    
-    .profile-details p {
-        color: #b0b0b0;
-    }
-    
-    .favorite-item {
-        background: #424242;
-        color: #e0e0e0;
-    }
-    
-    .favorite-item:hover {
-        background: #616161;
-    }
-} 
